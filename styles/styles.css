@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico&family=Sansita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body{
+    background: #1c1e57;
+    color: white;
+}
+/*
+body{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAFRJREFUKFNjZGBI+c8ABV+T9Bm4512EcVFoRphCfIpAOsAKCSkCK/yaNPk/LuuQ7YZbjdVhSILUVdj6NRTiGXzWghRVc6/GrxCmCB482ExEVgSSBwCXziS44msX+gAAAABJRU5ErkJggg==);
+    color: white;
+}
+*/
+
+h1, h2, h3{
+    color: blueviolet;
+    font-family: 'Sansita';
+    letter-spacing: 1.5px;
+}
+
+p, li, table, figcaption, footer{
+    font-family: Quantico;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap: 15px;
+    color: lightcoral;
+    align-items: center;
+    padding: 5px;
+}
+nav a {
+    background: lightgreen;
+}
+
+table, th, td, a.table{
+    background-color: rgb(228, 190, 244);
+    border-collapse: collapse;
+    color: rgb(217, 68, 118);
+}
+
+table, th, td {
+    border: 2px solid blueviolet;
+}
