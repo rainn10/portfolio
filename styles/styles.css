@@ -1,49 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Quantico&family=Sansita&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
 
-html{
-    box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 body{
     background: #1c1e57;
     color: white;
+    max-width: 650px;
+    margin: auto;
+    padding-top: 10%;
 }
-/*
-body{
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAFRJREFUKFNjZGBI+c8ABV+T9Bm4512EcVFoRphCfIpAOsAKCSkCK/yaNPk/LuuQ7YZbjdVhSILUVdj6NRTiGXzWghRVc6/GrxCmCB482ExEVgSSBwCXziS44msX+gAAAABJRU5ErkJggg==);
-    color: white;
-}
-*/
 
-h1, h2, h3{
+h1, h2, h3{    
     color: blueviolet;
-    font-family: 'Sansita';
+    font-family: 'Sansita', sans-serif;
     letter-spacing: 1.5px;
 }
 
 p, li, table, figcaption, footer{
-    font-family: Quantico;
+    font-family:'Quantico', sans-serif;
 }
 
+/* navigation adjustments */
 nav{
+    overflow: visible;
     display: flex;
-    flex-direction: column;
+    background-color: lightgreen;
     position: fixed;
-    gap: 15px;
-    color: lightcoral;
-    align-items: center;
-    padding: 5px;
-}
-nav a {
-    background: lightgreen;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 58px;
+    margin: auto;
 }
 
+nav li{
+    top: 0;
+    font-size: 20px;
+    list-style: none;
+    display: inline-flex;
+}
+
+nav li a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+nav li a:hover{
+    color: pink;
+}
+
+@media screen and (max-width: 500px) {
+    nav li a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+/* About Me*/
+section#about img {
+    float: left;
+    border-radius: 26px;
+    border-left: 10px solid lightgreen;
+    border-right: 10px solid lightgreen;
+    margin-right: 1.5em;
+    margin-left: -6%;
+    margin-bottom: 1em;
+}
+
+/* table adjustments*/
 table, th, td, a.table{
     background-color: rgb(228, 190, 244);
     border-collapse: collapse;
