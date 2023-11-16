@@ -15,8 +15,12 @@ light pink #ff9fdd
 body {
     background: #1c1e57;
     color: white;
-    max-width: 1000px;
+    max-width: 750px;
     margin: auto;
+}
+
+main {
+  
 }
 
 h1, h2, h3 {    
@@ -30,28 +34,51 @@ p, li, table, figcaption, footer {
 }
 
 nav {
-    top: 0;
-    left: 0;
+
 }
 
-header nav li a {
-    left: 0%;
+nav li a {
     background: black;
     border: 2px solid white;
     color: white;
     text-decoration: none;
-    padding: 10px 25px;
-
+    padding: 5px 25px;
 }
 
-header nav ul {
+nav ul {
     width: 100%;
-    flex-wrap: wrap;
     display: inline-flex;
+    flex-wrap: wrap;
+    flex-grow: 10;
+    flex: 5 10 20;
+    justify-content: space-between;
     list-style-type: none;
-    margin-top: 12px;
+    margin-top: 20px;
+   /* margin-top: 11.8px; */
+    padding: 0;
 }
 
+img#logo {
+    width: 200px;
+    margin-top: 20px;
+
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+    body {
+        margin: auto;
+    }
+    nav ul {
+        position: static;
+        width: 100%;
+    }
+    nav li {
+        margin-bottom: 11.5px;
+    }
+    
+}
 
 /* test example nav 
 header nav{
