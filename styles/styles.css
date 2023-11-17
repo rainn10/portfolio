@@ -11,26 +11,25 @@ pink #ff40ba
 light pink #ff9fdd
 */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: #1c1e57;
     color: white;
     font-family:'Quantico', sans-serif;
-    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
-    /*
-    max-width: 760px;
-    margin: auto; */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 
 main {
     flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
     max-width: 760px;
     margin: auto;
 }
@@ -42,11 +41,16 @@ h1, h2, h3 {
 }
 
 header {
+    width: 100%;
+    position:fixed;
     display: flex;
-    background: #150d56;
+    background: rgb(9, 1, 71);
     align-items: center;
-    height: 55px;
+    justify-content: center;
+    top: 0;
+    height: 60px;
     padding: 5px;
+    z-index: 1000;
 }
 
 header img#logo {
@@ -67,7 +71,6 @@ header nav {
 header nav ul {
     display: flex;
     list-style-type: none;
-    margin-top: 0;
     padding: 0;
 }
 
@@ -82,6 +85,7 @@ header nav li a {
     color: white;
     text-decoration: none;
     padding: 5px 25px;
+    margin-left: 10px;
 }
 
 header nav li a:hover {
@@ -90,125 +94,57 @@ header nav li a:hover {
     color: white;
 }
 
-/*Responsive Styles*/
-
-@media screen and (max-width : 760px){
-    body {
-        margin: 0;
-    }
-    header nav ul {
-        position: static;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-    header nav li {
-        margin-bottom: 11.5px;
-    }
-    
-}
-
-/* test example nav 
-header nav{
-    padding: 1.40em;
-    top: 0%;
+/*Graphic*/
+.graphic {
+    position: absolute;
+    top: 55px;
     left: 0;
     width: 100%;
-    position: fixed;
-    overflow: hidden;
-    background-color: lightgreen;
+    height: 655px; 
+    margin: 0;
+    background: linear-gradient(to right, #67c4a5, #4b1d6d); 
 }
 
-header nav li a {
-    position: fixed;
-    top: 0;
-    color: blueviolet;
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none;
-    width: 25%%;
-    
+/*About Me*/
+section#about {
+    margin-top: 700px;
+    padding-top: 60px;
 }
-
-header nav li a  {
-
-}
-
-header nav li a:hover {
-    margin-top: 5px;
-    background-color: pink;
+section#about a {
     color: white;
-    border: 2px solid white;
-
 }
-
-header ul{
-    list-style-type: none;
+section#about a:hover {
+    color: #67c4a5;
 }
-
-/* navigation adjustments
-nav{
-    overflow: visible;
-    display: flex;
-    background-color: lightgreen;
-    position: fixed;
-    justify-content: space-around;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 58px;
-    margin: auto;
-}
-
-nav li{
-    background-color: black;
-    top: 0;
-    font-size: 20px;
-    list-style: none;
-    display: inline-flex;
-}
-
-nav li a{
-    background-color: rgb(21, 255, 0);
-    text-decoration: none;
-    color: blueviolet;
-}
-
-nav li a:hover{
-    background-color: darkgreen;
-    color: pink;
-}
-
-@media screen and (max-width: 500px) {
-    nav li a {
-      float: none;
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-
-
-/* About Me*/
-
-
 img#pfp {
     float: left;
     border-radius: 26px;
     border-left: 10px solid #67c4a5;
     border-right: 10px solid #67c4a5;
     margin-right: 1.5em;
-    margin-left: -6%;
     margin-bottom: 1em;
 }
 
-/*projects*/
-img#ldes {
+/*My Interests*/
+section#interests {
+    padding-top: 60px;
 }
 
-
-
+/*My Projects*/
+section#projects {
+    padding-top: 60px;
+}
+section#projects h3 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+}
+section#projects img{
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: auto;
+}
 
 /*table*/
 table, th, td {
@@ -236,10 +172,53 @@ td, td a {
 td a:hover {
     color: #f48998;
 }
+/*aside*/
+aside {
+    margin-top: 15px;
+    font-family: 'Pixelify Sans',sans-serif;
+    background-color: #4b1d6d;
+    border-radius: 0 5px 5px 0;
+    width: 55%;
+    position: absolute;
+    left: 0;
+    overflow-y: auto;
+  }
+aside p {
+    max-width: 760px;
+    margin: 0;
+    padding: 10px;
+}
 
+.games {
+    margin-top: 75px;
+}
+
+/* Example CSS for a simple carousel */
+section#projects {
+}
+
+/*
 section#contact a {
     color: #67c4a5;
 }
 section#contact a:hover {
     color: #f48998;
+}
+*/
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+    body {
+        margin: 0;
+    }
+    header nav ul {
+        position: static;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav li {
+        margin-bottom: 11.5px;
+    }
 }
