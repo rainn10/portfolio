@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quantico&family=Sansita&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Quantico&family=Sansita&display=swap');
 
 /* colour swatches
 main logo green #67c4a5
@@ -15,66 +14,95 @@ light pink #ff9fdd
 body {
     background: #1c1e57;
     color: white;
-    max-width: 750px;
+    font-family:'Quantico', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    /*
+    max-width: 760px;
+    margin: auto; */
+}
+
+
+main {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 760px;
     margin: auto;
 }
 
-main {
-  
-}
-
 h1, h2, h3 {    
-    color: blueviolet;
+    color: #ff40ba;
     font-family: 'Sansita', sans-serif;
     letter-spacing: 1.5px;
 }
 
-p, li, table, figcaption, footer {
-    font-family:'Quantico', sans-serif;
+header {
+    display: flex;
+    background: #150d56;
+    align-items: center;
+    height: 55px;
+    padding: 5px;
 }
 
-nav {
-
+header img#logo {
+    width: 100px;
+    margin: 5px;
 }
 
-nav li a {
-    background: black;
+img#logo {
+    width: 200px;
+    margin-top: 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+}
+
+header nav li {
+    margin-right: 10px;
+}
+
+header nav li a {
+    font-family: 'Pixelify Sans',sans-serif;
+    background: #4b1d6d;
     border: 2px solid white;
     color: white;
     text-decoration: none;
     padding: 5px 25px;
 }
 
-nav ul {
-    width: 100%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-grow: 10;
-    flex: 5 10 20;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-top: 20px;
-   /* margin-top: 11.8px; */
-    padding: 0;
-}
-
-img#logo {
-    width: 200px;
-    margin-top: 20px;
-
+header nav li a:hover {
+    background: #f48998;
+    border:2px solid #67c4a5;
+    color: white;
 }
 
 /*Responsive Styles*/
 
 @media screen and (max-width : 760px){
     body {
-        margin: auto;
+        margin: 0;
     }
-    nav ul {
+    header nav ul {
         position: static;
         width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
-    nav li {
+    header nav li {
         margin-bottom: 11.5px;
     }
     
@@ -175,14 +203,43 @@ img#pfp {
     margin-bottom: 1em;
 }
 
-/* table adjustments*/
-table, th, td, a.tabl {
-    background-color: rgb(228, 190, 244);
-    border-collapse: collapse;
-    color: rgb(217, 68, 118);
+/*projects*/
+img#ldes {
 }
 
+
+
+
+/*table*/
 table, th, td {
-    border: 2px solid blueviolet;
+    background: #67c4a5;
+    border: 4px solid #ff40ba;
+    border-collapse: collapse;
+    text-align: center;
+}
+table{
+    margin: auto;
+    width: 85%;
+    align-content: center;
+}
+th {
+    font-family: 'Pixelify Sans',sans-serif;
+    font-size: 18px;
+    padding: 13px;
+    color: #ff40ba;
+}
+td, td a {
+    background: #ffbee7;
+    padding: 8px;
+    color: #4b1d6d;
+}
+td a:hover {
+    color: #f48998;
 }
 
+section#contact a {
+    color: #67c4a5;
+}
+section#contact a:hover {
+    color: #f48998;
+}
