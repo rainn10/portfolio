@@ -29,18 +29,59 @@ main {
     max-width: 750px;
     margin: auto;
 }
+
 h2 {
     font-size: 30px;
 }
+section#about h2,
+section#projects h2,
+section#interests h2 {
+    position: relative;
+    max-width: 750px;
+}
+section#about h2::after,
+section#projects h2::after,
+section#interests h2::after {
+    content: "";
+    display: block;
+    height: 2px; 
+    background-color: #ff40ba;
+    position: absolute;
+    top: 60%;
+    margin-right: 100%;
+}
+section#about h2::after {
+    max-width: 750px;
+    width: calc(75%);
+    margin: auto;
+    right: 0;
+}
+section#projects h2::after {
+    max-width: 750px;
+    width: calc(78%);
+    margin: auto;
+    right: 0;
+}
+section#interests h2::after {
+    max-width: 750px;
+    width: calc(76%);
+    margin: auto;
+    right: 0;
+}
+
+
 h1, h2, h3 {    
     color: #ff40ba;
     font-family: 'Sansita', sans-serif;
     letter-spacing: 1.5px;
 }
+
 p {
     font-size: 16px;
+    line-height: 27px;
 }
 
+/*Header*/
 header {
     width: 100%;
     position:fixed;
@@ -53,32 +94,26 @@ header {
     padding: 5px;
     z-index: 1000;
 }
-
 header img#logo {
     width: 100px;
     margin: 5px;
 }
-
 img#logo {
     width: 200px;
     margin-top: 20px;
 }
-
 header nav {
     display: flex;
     align-items: center;
 }
-
 header nav ul {
     display: flex;
     list-style-type: none;
     padding: 0;
 }
-
 header nav li {
     margin-right: 10px;
 }
-
 header nav li a {
     font-family: 'Pixelify Sans',sans-serif;
     background: #4b1d6d;
@@ -88,7 +123,6 @@ header nav li a {
     padding: 5px 10px;
     margin-left: 10px;
 }
-
 header nav li a:hover {
     background: #f48998;
     border:2px solid #67c4a5;
@@ -116,7 +150,7 @@ section#intro h1 {
     width: 100%;
     height: 730px; 
     margin: 0;
-    background: linear-gradient(to bottom, rgb(9, 1, 71), #f48998, #1c1e57); 
+    background: linear-gradient(to bottom, rgb(9, 1, 71), #ffa2ae, #1c1e57); 
 }
 
 /*About Me*/
@@ -136,7 +170,6 @@ img#pfp {
     border-left: 10px solid #67c4a5;
     border-right: 10px solid #67c4a5;
     margin-right: 1.5em;
-    margin-bottom: 1em;
 }
 section#about b{
     font-family: 'Playball', cursive;
@@ -154,6 +187,10 @@ section#interests h3 {
 .movie, .music, .games {
     margin-top: 45px;
 }
+.movie li, .games li {
+    margin-left: 8%;
+    margin-top: 2.5%;
+}
 
 /*My Projects*/
 section#projects {
@@ -161,7 +198,9 @@ section#projects {
 }
 section#projects h3 {
     text-align: center;
-    margin-top: 100px;
+    margin-right:30px;
+    margin-top: 60px;
+    margin-bottom: 15px;
     font-size: 30px;
 }
 section#projects img{
@@ -170,6 +209,29 @@ section#projects img{
     width: 600px;
     height: auto;
 }
+figure {
+    display: flex;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    justify-content: center;
+}
+figure figcaption {
+    font-family: 'Pixelify Sans',sans-serif;
+    font-size: 135%;
+    padding: 35px 10px 35px;
+    color: #1c1e57;
+    background: linear-gradient(to right, #427866, #67c4a5, #67c4a5, #67c4a5, #67c4a5);
+    border-radius: 0 20px 20px 0;
+    writing-mode: vertical-lr;
+    margin-bottom: auto;
+    margin-top: 75px;
+}
+.proj2 figcaption{
+    background: linear-gradient(to right, #893c46, #f48998, #f48998, #f48998, #f48998);
+    color: white;
+}
+
 
 /*Table*/
 table, th, td {
@@ -249,6 +311,10 @@ footer section#contact, small {
         margin: auto;
     }
 
+    main {
+        margin: 2%;
+    }
+
     header {
         display: flex;
         flex-direction: column;
@@ -286,16 +352,24 @@ footer section#contact, small {
         height: 560px;
     }
 
+    section#about h2::after,
+    section#projects h2::after,
+    section#interests h2::after {
+        display: none;
+    }
+
     section#about {
         margin-top: 275px;
     }
 
     section#projects img{
-        width: 100%;
+        width: 90%;
         max-width: 100%;
+        justify-content: center;
     }
-
-    main {
-        margin: 2%;
+    figure figcaption {
+        width: 90%;
+        max-width: 100%;
+        justify-content: center;
     }
 }
