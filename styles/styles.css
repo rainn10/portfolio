@@ -4,11 +4,8 @@
 main logo green #67c4a5
 main logo pink #f48998
 hair purple #4b1d6d
-yellow #ffe08c
-blue #4de3ff
 logo blue #150d56
 pink #ff40ba
-light pink #ff9fdd
 */
 
 * {
@@ -99,19 +96,32 @@ header nav li a:hover {
 }
 
 /*Graphic*/
+section#intro h1 {
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    margin-top: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 500%;
+    color: #150d56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 .graphic {
     position: absolute;
     top: 55px;
     left: 0;
     width: 100%;
-    height: 655px; 
+    height: 730px; 
     margin: 0;
-    background: linear-gradient(to right, #67c4a5, #f48998); 
+    background: linear-gradient(to bottom, rgb(9, 1, 71), #f48998, #1c1e57); 
 }
 
 /*About Me*/
 section#about {
-    margin-top: 700px;
+    margin-top: 400px;
     padding-top: 60px;
 }
 section#about a {
@@ -216,6 +226,7 @@ section#contact h2{
 }
 section#contact a {
     color: #67c4a5;
+    font-family: 'Pixelify Sans',sans-serif;
 }
 section#contact a:hover {
     color: #f48998;
@@ -226,6 +237,7 @@ footer section#contact, small {
     align-items: flex-start;
     margin: auto;
     max-width: 750px;
+    
 }
 
 
@@ -239,30 +251,43 @@ footer section#contact, small {
 
     header {
         display: flex;
-        height: auto;
         flex-direction: column;
+        height: auto;
+        padding: 0;
     }
     header img#logo {
         width: 80px
     }
     header nav {
-        display: flex;
         text-align: center;
     }
     header nav ul {
         width: 100%;
-        margin: 1.5%;
+        padding-bottom: 2px;
+        margin: 0;
     }
     header nav li {
         margin:1%;
         display: flex;
-    
     }
     header nav li a {
         margin-left: 0;
     }
     header nav li span {
         display: none;
+    }
+
+    section#intro h1 {
+        margin-top: 275px;
+        font-size: 300%;
+        text-align: center;
+    }
+    .graphic {
+        height: 560px;
+    }
+
+    section#about {
+        margin-top: 275px;
     }
 
     section#projects img{
