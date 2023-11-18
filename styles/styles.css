@@ -333,6 +333,12 @@ footer section#contact, small {
         display: none;
     }
 
+    section#about h2,
+    section#projects h2,
+    section#interests h2{
+        margin-top: 10%;
+    }
+
     section#about {
         margin-top: 275px;
     }
