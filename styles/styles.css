@@ -8,10 +8,6 @@ logo blue #150d56
 pink #ff40ba
 */
 
-* {
-    box-sizing: border-box;
-}
-
 body {
     background: #1c1e57;
     color: white;
@@ -226,7 +222,7 @@ th {
     color: #ff40ba;
     background: #67c4a5;
 }
-td, td a {
+td{
     text-align: center;
     padding: 8px;
     color: #4b1d6d;
@@ -352,5 +348,8 @@ footer section#contact, small {
         width: 90%;
         max-width: 100%;
         justify-content: center;
+    }
+    td a{
+        text-align: center;
     }
 }
