@@ -227,6 +227,9 @@ td{
     padding: 8px;
     color: #4b1d6d;
 }
+td a{
+    color: #4b1d6d;
+}
 td a:hover {
     color: #f48998;
 }
