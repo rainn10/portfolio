@@ -245,6 +245,22 @@ aside p {
     text-align: center;
 }
 
+#btn-alert {
+    display: block;
+    margin: 50px auto 0;
+    text-align: center;
+     background-color: #ff40ba;
+    color: #67c4a5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  #btn-alert:hover {
+    background-color: darkblue;
+  }
+
 /*Footer*/
 footer {
     margin-top: 25%;
