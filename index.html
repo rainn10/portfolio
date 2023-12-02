@@ -7,6 +7,7 @@
         <link href="styles/styles.css" rel="stylesheet"/>
     </head>
 <body>
+        <script defer src="javascript/main.js"></script>
     <header>
         <img id="logo" src="images/Personal-Logo.png" alt="rain logo" width="300">
         <nav>
@@ -24,6 +25,7 @@
             <h1>&#9733; Its me, Hi! &#9733;</h1>
             <div class="graphic"></div>
         </section>
+        
         <section id="about">
             <h2>About Me ^-^</h2>
                  <img id="pfp" src="images/Personal-Photo.jpg" alt="Portrait Photo of Rain Aclao" width="275"/>
@@ -36,6 +38,8 @@
                     <p>
                         Thank you for joining me on this journey, and I look forward to sharing more with you in the future. If you have any questions or would like to connect, don't hesitate to reach out.
                     </p>
+            <button id="btn-alert">DO NOT CLICK</button>
+                
         </section>
         <section id="projects">
             <h2>My Projects</h2>
@@ -132,6 +136,16 @@
                             <li>Little Nightmares</li>
                             <li>Rusty Lake Paradise</li>
                         </ol>
+             </section>
+             <section class="minigame"><h3>MINIGAME</h3>
+                <p>10 seconds. Click as much as you can! Go, go, go!</p>
+                <button id="btn-counter">Click Me!</button>
+                <p id="txt-counter">Number: 0</p>
+                <p id="timer">Time remaining: <span id="timer-countdown">10</span> seconds</p>
+                <button id="btn-reset">Reset</button>
+             </section>
+             <section id="ol-list"> <h2>Ordered List</h2>
+                <ol id="numbers"></ol>
              </section>
         </section>
     </main>

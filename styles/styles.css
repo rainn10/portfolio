@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Playball&family=Quantico&family=Sansita&display=swap');
-
 /* colour swatches
 main logo green #67c4a5
 main logo pink #f48998
@@ -7,19 +6,16 @@ hair purple #4b1d6d
 logo blue #150d56
 pink #ff40ba
 */
-
 body {
     background: #1c1e57;
     color: white;
     font-family:'Quantico', sans-serif;
     margin: 0;
 }
-
 main {
     max-width: 750px;
     margin: auto;
 }
-
 h2 {
     font-size: 30px;
 }
@@ -59,18 +55,15 @@ section#interests h2::after {
     right: 0;
 }
 
-
 h1, h2, h3 {    
     color: #ff40ba;
     font-family: 'Sansita', sans-serif;
     letter-spacing: 1.5px;
 }
-
 p {
     font-size: 16px;
     line-height: 27px;
 }
-
 /*Header*/
 header {
     width: 100%;
@@ -107,7 +100,6 @@ header nav li a:hover {
     border:2px solid #67c4a5;
     color: white;
 }
-
 /*Graphic*/
 section#intro h1 {
     position: relative;
@@ -129,7 +121,6 @@ section#intro h1 {
     height: 730px; 
     background: linear-gradient(to bottom, rgb(9, 1, 71), #ffa2ae, #1c1e57); 
 }
-
 /*About Me*/
 section#about {
     margin-top: 400px;
@@ -153,7 +144,27 @@ section#about b{
     font-size: 130%;
     font-weight: 200;
 }
-
+/*Alert Button*/
+#btn-alert {
+    font-family: 'Pixelify Sans',sans-serif;
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    background-color: #ff40ba;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: #150d56;
+    padding: 25px 100px;
+    border: 3px solid #150d56;
+    border-radius: 100px;
+    width: 500px;
+  }
+  #btn-alert:hover {
+    background-color: red;
+    color: #67c4a5;
+    border: 3px solid #67c4a5;
+  }
 /*My Projects*/
 section#projects {
     padding-top: 60px;
@@ -189,7 +200,6 @@ figure figcaption {
     background: linear-gradient(to right, #893c46, #f48998, #f48998, #f48998, #f48998);
     color: white;
 }
-
 /*My Interests*/
 section#interests {
     padding-top: 60px;
@@ -204,7 +214,6 @@ section#interests h3 {
     margin-left: 8%;
     margin-top: 2.5%;
 }
-
 /*Table*/
 table, th, td {
     background: #ffbee7;
@@ -233,7 +242,6 @@ td a{
 td a:hover {
     color: #f48998;
 }
-
 /*Aside*/
 aside {
     margin-top: 15px;
@@ -247,7 +255,60 @@ aside p {
     padding: 10px;
     text-align: center;
 }
-
+/*Minigame*/
+.minigame{
+    margin-top: 10%;
+    margin-bottom: 0;
+    text-align: center;
+}
+    /*button*/
+#btn-counter {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+    background-color: #67c4a5;
+    border: 3px solid #150d56;
+    border-radius: 50%;
+    width: 150px; 
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+#btn-counter:hover {
+  background-color: #ff40ba;
+  border: 3px solid white;
+}
+    .even {
+    color: #1c1e57; }
+    .odd {
+    color: white}
+#btn-reset {
+    font-family: 'Pixelify Sans', sans-serif;
+    background: #4b1d6d;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 5px 25px;
+}
+#btn-reset:hover {
+    background: #f48998;
+    border:2px solid #67c4a5;
+    color: white;
+}
+/* ol List*/
+#numbers li{
+    margin-left: 8%;
+    margin-top: 2.5%;
+    text-align: center;
+}
+#numbers li:nth-child(even) {
+    background-color:#f48998;
+    color: #ffdb27;
+  }
+  
+  #numbers li:nth-child(odd) {
+    background-color: #67c4a5;
+    color: #00a6ff;
+  }
 /*Footer*/
 footer {
     margin-top: 25%;
@@ -278,17 +339,14 @@ footer section#contact, small {
 
 
 
-
 /*Responsive Styles*/
 @media screen and (max-width : 760px){
     body {
         margin: auto;
     }
-
     main {
         margin: 2%;
     }
-
     header {
         display: flex;
         flex-direction: column;
@@ -316,7 +374,6 @@ footer section#contact, small {
     header nav li span {
         display: none;
     }
-
     section#intro h1 {
         margin-top: 275px;
         font-size: 300%;
@@ -325,23 +382,19 @@ footer section#contact, small {
     .graphic {
         height: 560px;
     }
-
     section#about h2::after,
     section#projects h2::after,
     section#interests h2::after {
         display: none;
     }
-
     section#about h2,
     section#projects h2,
     section#interests h2{
         margin-top: 10%;
     }
-
     section#about {
         margin-top: 275px;
     }
-
     section#projects img{
         width: 90%;
         max-width: 100%;
@@ -354,5 +407,10 @@ footer section#contact, small {
     }
     td a{
         text-align: center;
+    }
+    #btn-alert {
+        font-size: 15px;
+        padding: 10px 50px;
+        width: 300px;
     }
 }
