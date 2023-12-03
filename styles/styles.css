@@ -273,12 +273,18 @@ aside p {
     align-items: center;
     justify-content: center;
 }
+
+.even-btn {
+    color: white; }
+.odd-btn {
+    color: #150d56}
+
 #btn-counter:hover {
   background-color: #ff40ba;
   border: 3px solid white;
 }
     .even {
-    color: #1c1e57; }
+    color: #ff40ba; }
     .odd {
     color: white}
 #btn-reset {
@@ -296,18 +302,18 @@ aside p {
 }
 /* ol List*/
 #numbers li{
-    margin-left: 8%;
-    margin-top: 2.5%;
+    margin-right: 5%;
+    margin-top: 2%;
     text-align: center;
 }
 #numbers li:nth-child(even) {
     background-color:#f48998;
-    color: #ffdb27;
+    color: #4b1d6d;
   }
   
   #numbers li:nth-child(odd) {
     background-color: #67c4a5;
-    color: #00a6ff;
+    color: rgb(9, 1, 71);
   }
 /*Footer*/
 footer {
