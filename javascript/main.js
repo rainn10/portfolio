@@ -1,3 +1,5 @@
+console.log('Hello, World!');
+
 /* Footer */
 const currentYear = new Date().getFullYear();
 const copyrightYear = document.getElementById("cc");
@@ -75,11 +77,19 @@ btnCounter.addEventListener('click', function () {
     txtCounter.textContent = `Number: ${count}`;
 
     if (count % 2 === 0) {
-        btnCounter.classList.add('even');
-        btnCounter.classList.remove('odd');
+        txtCounter.classList.add('even');
+        txtCounter.classList.remove('odd');
     } else {
-        btnCounter.classList.add('odd');
-        btnCounter.classList.remove('even');
+        txtCounter.classList.add('odd');
+        txtCounter.classList.remove('even');
+    }
+
+    if (count % 2 === 0) {
+        btnCounter.classList.add('even-btn');
+        btnCounter.classList.remove('odd-btn');
+    } else {
+        btnCounter.classList.add('odd-btn');
+        btnCounter.classList.remove('even-btn');
     }
 
     /* timer */
